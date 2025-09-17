@@ -195,13 +195,13 @@ def index():
         html += f"<div>Welcome {user[1]} | <a href='/logout'>Logout</a> | <a href='/profile/{user[0]}'>Profile</a> | <a href='/dms'>DMs</a></div>"
         html += "<a href='/new_thread' class='button'>New Thread</a>"
     else:
-        html += "<div><a href='/login'>Login</a> | <a href='/signup'>Signup</a></div>"
+        html += "<div><a href='/login'>Login</a> | <a href='/signup'>Signup</a></div> | <div><a>CODED BY CRYPTED444/ALI</a>"
     
     html += "<div class='thread-list'>"
     for t in threads:
         html += f"<div class='thread-item'><a href='/thread/{t['id']}'>{t['title']}</a> by {t['username']}</div>"
     html += "</div>"
-    return render_page("Forum Home", html)
+    return render_page("Section: Al-Dakhel's Class Forums", html)
 
 @app.route("/new_thread", methods=["GET","POST"])
 def new_thread():
@@ -386,3 +386,4 @@ def banned_page(reason):
 # --- Run app ---
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
