@@ -280,7 +280,7 @@ def dm_convo(uid):
     return html
 
 # --- Admin Panel ---
-ADMIN_USERS = [1]  # IDs with admin rights
+ADMIN_USERS = [6]  # IDs with admin rights
 
 @app.route("/admin", methods=["GET","POST"])
 def admin_panel():
@@ -336,3 +336,4 @@ def banned_page(reason):
 # --- Run app ---
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
