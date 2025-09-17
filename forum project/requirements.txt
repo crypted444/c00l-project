@@ -1,3 +1,2 @@
-flask
-sqlite3
-gunicorn
+Flask==3.1.2
+gunicorn==21.2.0
