@@ -1,0 +1,13 @@
+
+body{font-family:Arial,sans-serif;background-color:#36393f;color:white;margin:0;padding:0;}
+a{color:#00aff4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+header{background-color:#2f3136;padding:10px;color:white;}
+.container{display:flex;flex-wrap:wrap;}
+.sidebar{width:20%;padding:10px;background-color:#202225;}
+.content{width:80%;padding:10px;}
+textarea,input{width:100%;margin:5px 0;padding:5px;border-radius:5px;border:none;}
+input[type=submit]{background-color:#7289da;color:white;cursor:pointer;}
+ul{list-style:none;padding-left:0;}
+@media(max-width:768px){.container{flex-direction:column;}.sidebar,.content{width:100%;}}
+    
